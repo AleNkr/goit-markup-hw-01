@@ -177,13 +177,13 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--2-color);
 }
 .footer{
-    background-color: #2f303a;
+    background-color: var(--9-color);
 }
 .portfolio{
-    background-color: #E5E5E5;
+    background-color: var(--11-color);
 }
 .portfolio-btns{
     font-family: 'Roboto';
@@ -193,10 +193,12 @@ font-size: 16px;
 line-height: 1.62;
 
 
+
 text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--2-color);
+ cursor: pointer;
 }
 .portfolio-title{
     font-family: 'Roboto';
