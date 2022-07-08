@@ -3,9 +3,9 @@
   --main-bg-color: #ffffff;
   --second-color: #757575;
   --accent-color: #2196f3;
-  --5-color: #eeeeee;
+  --hero-btn-color: #188ce8;
   --6-color: #000000;
-  --7-color: #f5f4fa;
+  --team-bg-color: #f5f4fa;
   --footer-item-color: rgba(255, 255, 255, 0.6);
   --second-bg-color: #2f303a;
   --10-color: #ececec;
@@ -53,6 +53,20 @@ body {
 
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--main-color);
+}
+.logo2 {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.logo-span {
+  color: var(--accent-color);
 }
 .header-list {
   font-family: 'Roboto', sans-serif;
@@ -62,7 +76,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--main-bg-color);
+  color: var(--main-color);
+  text-decoration: none;
 }
 .header-list:hover,
 .header-list:focus {
@@ -75,6 +90,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1.14;
+  text-decoration: none;
 
   color: var(--second-color);
 }
@@ -84,6 +100,8 @@ body {
 }
 .make-order {
   background-color: var(--second-bg-color);
+}
+.main-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -97,7 +115,16 @@ body {
   color: var(--main-bg-color);
 }
 .hero-btn {
-  background-color: var(--accent-color);
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--hero-btn-color);
   color: var(--main-bg-color);
 }
 
@@ -136,6 +163,9 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--second-color);
+}
+.our-team {
+  background-color: var(--team-bg-color);
 }
 .about-title {
   font-family: 'Roboto', sans-serif;
@@ -207,22 +237,22 @@ body {
   background-color: var(--second-bg-color);
 }
 .portfolio {
-  background-color: var(--portfolio-bg-color);
+  background-color: var(--main-bg-color);
 }
-.portfolio-btns {
-  font-family: 'Roboto', sans-serif;
+.portfolio-btn {
+  font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--main-bg-color);
+  color: var(--main-color);
   cursor: pointer;
 }
-.portfolio-btns-hover:hover {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 }
