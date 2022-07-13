@@ -11,6 +11,14 @@
   --10-color: #ececec;
   --portfolio-bg-color: #e5e5e5;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 .header {
   background-color: var(--main-bg-color-color);
 }
@@ -37,7 +45,10 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .link {
   color: #212121;
 }
@@ -64,6 +75,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--main-bg-color);
+  margin-left: 215px;
 }
 .logo-span {
   color: var(--accent-color);
@@ -100,6 +112,10 @@ body {
 }
 .make-order {
   background-color: var(--second-bg-color);
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-title {
   font-family: 'Roboto', sans-serif;
@@ -111,6 +127,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
 
   color: var(--main-bg-color);
 }
@@ -126,10 +146,18 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--hero-btn-color);
   color: var(--main-bg-color);
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .description {
   background-color: var(--1main-color);
+  padding: 94px 215px;
 }
 .description-main-title {
   font-family: 'Roboto', sans-serif;
@@ -142,6 +170,7 @@ body {
 
   color: var(--main-color);
 }
+
 .description-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -164,8 +193,13 @@ body {
 
   color: var(--second-color);
 }
+.our-work {
+  padding: 94px 215px;
+  padding-top: 0px;
+}
 .our-team {
   background-color: var(--team-bg-color);
+  padding: 94px 215px;
 }
 .about-title {
   font-family: 'Roboto', sans-serif;
@@ -177,6 +211,8 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--main-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .team-title {
   font-family: 'Roboto', sans-serif;
@@ -186,7 +222,8 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin: 0 auto;
+  margin-bottom: 50px;
   color: var(--main-color);
 }
 .teammate {
@@ -223,6 +260,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--footer-item-color);
+  margin-left: 215px;
 }
 .address {
   font-family: 'Roboto', sans-serif;
@@ -232,12 +270,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
+  margin-left: 215px;
 }
 .footer {
   background-color: var(--second-bg-color);
 }
 .portfolio {
   background-color: var(--main-bg-color);
+  padding: 94px 215px;
+}
+.portfolio-btn-list {
+  display: flex;
+  margin-bottom: 50px;
 }
 .portfolio-btn {
   font-family: 'Roboto' sans-serif;
@@ -250,6 +294,7 @@ body {
 
   color: var(--main-color);
   cursor: pointer;
+  display: flex;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
