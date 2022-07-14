@@ -11,53 +11,64 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-        <ul class="list">
-          <li><a class="header-list link" href="./index.html">Студия</a></li>
-          <li><a class="header-list link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="header-list link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li><a class="header-contacts link" href="tel:+380961111111">+380961111111</a></li>
-        <li>
-          <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-    </header>
-    <main class="div">
-      <section class="make-order">
-        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
-      </section>
-      <section class="description">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="list">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+          <ul class="list header-list">
+            <li><a class="header-list-item link" href="./index.html">Студия</a></li>
+            <li><a class="header-list-item link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="header-list-item link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list contact-list">
+          <li><a class="header-contacts link" href="tel:+380961111111">+380961111111</a></li>
           <li>
+            <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
+      </section>
+      <section class="description section">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="list descr-list">
+          <li class="descr-list-item">
             <h3 class="description-title">Внимание к деталям</h3>
             <p class="description-text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="descr-list-item">
             <h3 class="description-title">Пунктуальность</h3>
             <p class="description-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="descr-list-item">
             <h3 class="description-title">Планирование</h3>
             <p class="description-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="descr-list-item">
             <h3 class="description-title">Современные технологии</h3>
             <p class="description-text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -66,79 +77,83 @@
         </ul>
       </section>
 
-      <section class="our-work">
-        <h2 class="about-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li><img src="./images/heasder/1.jpg" alt="клавиатура" width="370" height="294" /></li>
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/2.jpg"
-              alt="ноутбук"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/3.jpg"
-              alt="графический планшет"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="our-work section">
+        <div class="container">
+          <h2 class="about-title">Чем мы занимаемся</h2>
+          <ul class="list our-work-list">
+            <li><img src="./images/heasder/1.jpg" alt="клавиатура" width="370" height="294" /></li>
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/2.jpg"
+                alt="ноутбук"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/3.jpg"
+                alt="графический планшет"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="our-team">
-        <h2 class="team-title">Наша команда</h2>
+      <section class="our-team section">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
 
-        <ul class="list">
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/4.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="teammate">Игорь Демьяненко</h3>
-            <p class="teammate-descr">Product Designer</p>
-          </li>
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/5.jpg"
-              alt="Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="teammate">Ольга Репина</h3>
-            <p class="teammate-descr">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/6.jpg"
-              alt="Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="teammate">Николай Тарасов</h3>
-            <p class="teammate-descr">Marketing</p>
-          </li>
-          <li>
-            <img
-              class="about"
-              src="./images/heasder/7.jpg"
-              alt="Михаил Ермаков"
-              width="270"
-              height="260"
-            />
-            <h3 class="teammate">Михаил Ермаков</h3>
-            <p class="teammate-descr">UI Designer</p>
-          </li>
-        </ul>
+          <ul class="list our-team-list">
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/4.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="teammate">Игорь Демьяненко</h3>
+              <p class="teammate-descr">Product Designer</p>
+            </li>
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/5.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="teammate">Ольга Репина</h3>
+              <p class="teammate-descr">Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/6.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="teammate">Николай Тарасов</h3>
+              <p class="teammate-descr">Marketing</p>
+            </li>
+            <li>
+              <img
+                class="about"
+                src="./images/heasder/7.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="teammate">Михаил Ермаков</h3>
+              <p class="teammate-descr">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
