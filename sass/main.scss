@@ -1,19 +1,15 @@
-
-@import "./utils/variables";
-@import "./base/base";
-@import "./base/container";
-
-@import "./components/visually-hidden";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/opportunities";
-@import "./layout/about-us";
-@import "./layout/command";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./components/backdrop";
-@import "./components/moda-form";
-
-@import "./pages/portfolio"; 
-
+@import "./base/normalize";
+@import "./utils/global";
+@import "./utils/section";
+@import "./components/icon";
+@import "./components/header-nav";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/services";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./utils/container";
+@import "./components/filter";
+@import "./components/portfolio";
