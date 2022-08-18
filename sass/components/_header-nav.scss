@@ -75,7 +75,7 @@
 }
 
 .menu-container.is-open {
-  display: block;
+  display: flex;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 48px;
@@ -89,10 +89,10 @@
 //---------------------------------------
 .list-nav {
   @media screen and (max-width: 480px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   @media screen and (min-width: 480px) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   @media screen and (min-width: 768px) {

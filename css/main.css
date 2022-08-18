@@ -459,7 +459,9 @@ img {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 48px;
@@ -473,12 +475,12 @@ img {
 
 @media screen and (max-width: 480px) {
   .list-nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 480px) {
   .list-nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 768px) {
