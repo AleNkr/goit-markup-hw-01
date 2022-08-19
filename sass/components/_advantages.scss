@@ -1,54 +1,55 @@
 @import "../utils/vars";
 .advantages {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    @media screen {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 0;
     }
-    &__item {
-        @media  screen and (min-width: 480px) {
-            margin-bottom: 30px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        @media screen and (min-width: 768px) {
-            width: calc((100% - 30px) / 2);
-            margin-bottom: 0;
-        }
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 90px) / 4);
-            margin-bottom: 0;
-        }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+      margin-bottom: 0;
     }
-    &__bg {
-        background-color: #F5F4FA;
-        height: 120px;
-        margin-bottom: 30px;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  }
+  &__bg {
+    background-color: #f5f4fa;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    text-align: center;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: map-get($font-weight, Bold);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primaryColor;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      text-align: start;
     }
-    &__icon {
-        text-align: center;
-    }
-    &__title {
-        font-size: 14px;
-        font-weight: map-get($font-weight, Bold);
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        text-align: center;
-        color: $primaryColor;
-        margin-bottom: 10px;
-        @media screen and (min-width: 768px) {
-            text-align: start;
-        }
-    }
-    &__text {
-        letter-spacing: 0.03em;
-        color: $secondaryColor;
-        font-size: 14px;
-    }
+  }
+  &__text {
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+    font-size: 14px;
+  }
 }
